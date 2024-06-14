@@ -1,0 +1,175 @@
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.banner {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.tab:hover {
+  background-color: #0056b3;
+}
+
+.tab.active {
+  background-color: #0056b3;
+  font-weight: bold;
+}
+
+.tab-content {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-subform-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.add-subform-button:hover {
+  background-color: #218838;
+}
+
+.subform {
+  background: white;
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subform-title {
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.title-input {
+  font-size: 24px;
+  padding: 5px;
+  width: calc(100% - 12px);
+  margin-bottom: 10px;
+}
+
+.headers {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  color: #555;
+}
+
+.headers span {
+  flex: 1;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 0 10px;
+  align-items: center;
+}
+
+.row span, .row input {
+  flex: 1;
+  padding: 5px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.row input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.number-input {
+  width: 80px;
+}
+
+.item-input {
+  width: 150px;
+}
+
+.remove-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.remove-button:hover {
+  background-color: #c82333;
+}
+
+.add-row-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.add-row-button:hover {
+  background-color: #218838;
+}
+
+.net-total {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
