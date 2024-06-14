@@ -2,13 +2,18 @@ import React from 'react';
 import './TabContent.css';
 
 const TabContent = ({ tabIndex }) => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert(`Form for Tab ${tabIndex} submitted!`);
+  };
+
   const getFormContent = (index) => {
     switch (index) {
       case 1:
         return (
           <div className="form-section">
             <h2>Request for Proposal - Part 1</h2>
-            <form>
+            <form onSubmit={handleSubmit}>
               <label>
                 Project Title:
                 <input type="text" name="projectTitle" />
@@ -21,6 +26,7 @@ const TabContent = ({ tabIndex }) => {
                 Submission Deadline:
                 <input type="date" name="submissionDeadline" />
               </label>
+              <button type="submit" className="submit-button">Submit</button>
             </form>
           </div>
         );
@@ -28,7 +34,7 @@ const TabContent = ({ tabIndex }) => {
         return (
           <div className="form-section">
             <h2>Request for Proposal - Part 2</h2>
-            <form>
+            <form onSubmit={handleSubmit}>
               <label>
                 Project Budget:
                 <input type="number" name="projectBudget" />
@@ -41,6 +47,7 @@ const TabContent = ({ tabIndex }) => {
                 Proposal Submission Instructions:
                 <textarea name="submissionInstructions"></textarea>
               </label>
+              <button type="submit" className="submit-button">Submit</button>
             </form>
           </div>
         );
@@ -48,7 +55,7 @@ const TabContent = ({ tabIndex }) => {
         return (
           <div className="form-section">
             <h2>Request for Proposal - Part 3</h2>
-            <form>
+            <form onSubmit={handleSubmit}>
               <label>
                 Evaluation Criteria:
                 <textarea name="evaluationCriteria"></textarea>
@@ -57,6 +64,7 @@ const TabContent = ({ tabIndex }) => {
                 Selection Process:
                 <textarea name="selectionProcess"></textarea>
               </label>
+              <button type="submit" className="submit-button">Submit</button>
             </form>
           </div>
         );
@@ -64,7 +72,7 @@ const TabContent = ({ tabIndex }) => {
         return (
           <div className="form-section">
             <h2>Request for Proposal - Part 4</h2>
-            <form>
+            <form onSubmit={handleSubmit}>
               <label>
                 Contact Information:
                 <input type="text" name="contactInformation" />
@@ -73,6 +81,7 @@ const TabContent = ({ tabIndex }) => {
                 Questions and Clarifications:
                 <textarea name="questionsAndClarifications"></textarea>
               </label>
+              <button type="submit" className="submit-button">Submit</button>
             </form>
           </div>
         );
@@ -80,7 +89,7 @@ const TabContent = ({ tabIndex }) => {
         return (
           <div className="form-section">
             <h2>Request for Proposal - Part 5</h2>
-            <form>
+            <form onSubmit={handleSubmit}>
               <label>
                 Submission Format:
                 <textarea name="submissionFormat"></textarea>
@@ -89,6 +98,7 @@ const TabContent = ({ tabIndex }) => {
                 Additional Information:
                 <textarea name="additionalInformation"></textarea>
               </label>
+              <button type="submit" className="submit-button">Submit</button>
             </form>
           </div>
         );

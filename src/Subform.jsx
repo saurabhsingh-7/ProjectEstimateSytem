@@ -57,7 +57,9 @@ const Subform = ({ subform, updateNetTotal }) => {
           className="title-input"
         />
       ) : (
-        <h3 className="subform-title" onClick={toggleEditingTitle}>{title}</h3>
+        <h3 className="subform-title" onClick={toggleEditingTitle}>
+          Project ID: {subform.id} - {title}
+        </h3>
       )}
 
       <div className="headers">
